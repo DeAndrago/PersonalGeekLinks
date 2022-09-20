@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color:black;
+    background-position: top center;
+}
+
+header div {
+    width: 120px;
+}
+
+
+header div img {
+    text-align: center;
+    border-radius: 50%;
+}
+
+main {
+    display: grid;
+    max-width: 580px;
+}
