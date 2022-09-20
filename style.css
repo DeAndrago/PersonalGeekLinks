@@ -16,8 +16,13 @@ body {
     background-position: top center;
 }
 
-header {
+body * {
+    font-family: 'Oswald', sans-serif;
+    line-height: 160%;
+}
 
+header {
+    padding-top: 32px;
 }
 
 header div {
@@ -42,9 +47,16 @@ main {
     margin-top: 32px;
 }
 
+.social-list {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section {
     color: white;
     padding-top: 4px;
+    text-align: center;
 }
 
 section div {
@@ -60,4 +72,13 @@ section ul {
     gap: 16px;
 
     margin-top: 24px;
+}
+
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.stream-list img {
+    border-radius: 50%;
 }
