@@ -16,17 +16,48 @@ body {
     background-position: top center;
 }
 
+header {
+
+}
+
 header div {
     width: 120px;
+    height: 120px;
+    margin: auto;
+    display: flex; 
+
 }
 
 
 header div img {
-    text-align: center;
     border-radius: 50%;
 }
 
 main {
     display: grid;
     max-width: 580px;
+    margin: 32px auto;
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+section {
+    color: white;
+    padding-top: 4px;
+}
+
+section div {
+    background-color: #2e3a38;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 24px;
 }
