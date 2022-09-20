@@ -34,15 +34,22 @@ header div {
     padding: 4px;
     background-image: linear-gradient(90deg, #15dc43 0%, #43E7AD 50%, #E2D45C 100%); 
     border-radius: 50%;
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.2);
 }
 
 
 header div img {
     border-radius: 50%;
+    width: 100%;
 }
 
 main {
     display: grid;
+    width: 90%;
     max-width: 580px;
     margin: 32px auto;
     display: grid;
@@ -64,15 +71,20 @@ section {
     background-image: linear-gradient(90deg, #15dc43 0%, #43E7AD 50%, #E2D45C 100%); 
 }
 
-section p {
-    color: gray;
-}
-
 section div {
     background-color: #2e3a38;
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+    color: rgb(168, 165, 165);
+    letter-spacing: -0.18px;
 }
 
 section ul {
@@ -81,6 +93,14 @@ section ul {
     gap: 16px;
 
     margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.2);
 }
 
 .movie-list img {
@@ -103,3 +123,47 @@ section ul {
     border-radius: 50%;
 }
 
+/* Animation */
+
+header div {
+    animation: topOfHeader .7s .2s backwards;
+}
+
+main section {
+    animation: mainOfPage .7s backwards;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0s ;
+}
+main section:nth-child(2) {
+    animation-delay: .4s;
+}
+main section:nth-child(3) {
+    animation-delay: .8s;
+}
+
+
+@keyframes topOfHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes mainOfPage {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
